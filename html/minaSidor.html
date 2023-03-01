@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <video autoplay muted loop plays-inline>
+        <source src="../images/office.mp4" type="video/mp4" />
+      </video>
+
+      <div>
+        <h1>all<span id="headingSpan">LIA</span></h1>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <a class="menu" aria-current="page" href="../index.html">Hem</a>
+        <a class="menu" href="../html/cvMallar.html">Cv-Mallar</a>
+        <a class="menu" href="../html/minaSidor.html">Mina sidor</a>
+        <a class="menu" href="../html/contactUs.html">Kontakta Oss</a>
+        <a class="menu" href="../html/companyList.html">Företagslista</a>
+		<a class="menu" href="../html/events.html">Events</a>
+    </nav>
+
+    <div class="form-container">
+      <form>
+        <label for="name">För- och efternamn:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone" /><br /><br />
+
+        <label for="cv">CV:</label>
+        <input type="file" id="cv" name="cv" /><br /><br />
+
+        <label for="letter">Personligt brev:</label>
+        <textarea id="letter" name="letter" rows="10" cols="50"></textarea
+        ><br /><br />
+
+        <input type="submit" value="Skicka" />
+      </form>
+
+      <form>
+        <!-- Preferenser såsom "Miljövänligt osv, kan hittas i kursen konsultrollen."-->
+        <!-- Filter-taggar kan hämtas från företagslistan -->
+
+        <strong> <p>Välj preferenser på företag:</p></strong>
+        <input
+          type="checkbox"
+          id="preference1"
+          name="preference1"
+          value="preference1"
+        />
+        <label for="preference1">Miljövänligt</label><br />
+        <input
+          type="checkbox"
+          id="preference2"
+          name="preference2"
+          value="preference2"
+        />
+        <label for="preference2">Jämlikhet</label><br />
+        <input
+          type="checkbox"
+          id="preference3"
+          name="preference3"
+          value="preference3"
+        />
+        <label for="preference3">Goda arbetsförhållanden</label><br />
+        <br />
+
+        <strong> <p>Kunskaper inom:</p></strong>
+        <input
+          type="checkbox"
+          id="preference4"
+          name="preference4"
+          value="preference4"
+        />
+        <label for="preference4">JavaScript</label><br />
+        <input
+          type="checkbox"
+          id="preference5"
+          name="preference2"
+          value="preference5"
+        />
+        <label for="preference5">Frontend</label><br />
+        <input
+          type="checkbox"
+          id="preference6"
+          name="preference6"
+          value="preference6"
+        />
+        <label for="preference6">Java</label><br />
+        <input
+          type="checkbox"
+          id="preference7"
+          name="preference7"
+          value="preference7"
+        />
+        <label for="preference7">Backend</label><br />
+        <br />
+        <input type="submit" value="Välj" />
+      </form>
+    </div>
+
+    <footer>
+      <p>allLIA | 2023</p>
+    </footer>
+  </body>
+</html>
